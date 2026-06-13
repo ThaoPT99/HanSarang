@@ -122,8 +122,20 @@
                             <a href="#timeline" style="display:flex; align-items:center; gap:8px; padding:6px 10px; border-radius:var(--radius-sm); color:var(--text-secondary);">
                                 <span style="width:8px; height:8px; border-radius:50%; background:#e74c3c;"></span> Timeline nộp hồ sơ
                             </a>
+                            <a href="#kvac" style="display:flex; align-items:center; gap:8px; padding:6px 10px; border-radius:var(--radius-sm); color:var(--text-secondary);">
+                                <span style="width:8px; height:8px; border-radius:50%; background:#e74c3c;"></span> KVAC & Nộp visa
+                            </a>
+                            <a href="#visa-form" style="display:flex; align-items:center; gap:8px; padding:6px 10px; border-radius:var(--radius-sm); color:var(--text-secondary);">
+                                <span style="width:8px; height:8px; border-radius:50%; background:#3498db;"></span> Mẫu đơn visa
+                            </a>
                             <a href="#loi-thuong-gap" style="display:flex; align-items:center; gap:8px; padding:6px 10px; border-radius:var(--radius-sm); color:var(--text-secondary);">
                                 <span style="width:8px; height:8px; border-radius:50%; background:#e67e22;"></span> Lỗi thường gặp
+                            </a>
+                            <a href="#canh-bao" style="display:flex; align-items:center; gap:8px; padding:6px 10px; border-radius:var(--radius-sm); color:var(--text-secondary);">
+                                <span style="width:8px; height:8px; border-radius:50%; background:#c0392b;"></span> Cảnh báo quan trọng
+                            </a>
+                            <a href="#links" style="display:flex; align-items:center; gap:8px; padding:6px 10px; border-radius:var(--radius-sm); color:var(--text-secondary);">
+                                <span style="width:8px; height:8px; border-radius:50%; background:#2ecc71;"></span> Link hữu ích
                             </a>
                         </div>
                     </div>
@@ -186,6 +198,16 @@
                             <h4>Thư giới thiệu (Recommendation)</h4>
                             <p>Mẫu thư giới thiệu từ giáo viên/giáo sư - yếu tố quan trọng trong hồ sơ</p>
                         </div>
+                        <div class="template-card" onclick="DossierApp.showTemplate('visa-application')">
+                            <div class="template-icon">🇰🇷</div>
+                            <h4>Hướng dẫn điền mẫu đơn Visa</h4>
+                            <p>Chi tiết từng mục trong đơn xin visa Hàn Quốc, điền bằng tiếng Anh/Hàn</p>
+                        </div>
+                        <div class="template-card" onclick="DossierApp.showTemplate('kvac-guide')">
+                            <div class="template-icon">🏢</div>
+                            <h4>Hướng dẫn nộp tại KVAC</h4>
+                            <p>Địa chỉ, quy trình, lệ phí và lưu ý khi nộp hồ sơ tại KVAC Hà Nội & TP.HCM</p>
+                        </div>
                         <div class="template-card" onclick="DossierApp.showTemplate('checklist')">
                             <div class="template-icon">✅</div>
                             <h4>Checklist đầy đủ</h4>
@@ -214,13 +236,119 @@
                     <div class="doc-card" style="border-left:4px solid #e67e22;">
                         <ul style="padding-left:20px; color:var(--text-secondary); line-height:2.2; font-size:0.9rem;">
                             <li><strong>Hồ sơ không đồng bộ:</strong> Tên trên các giấy tờ khác nhau (CMND khác tên khai sinh)</li>
-                            <li><strong>Sổ tiết kiệm không rõ nguồn gốc:</strong> Không chứng minh được tiền từ đâu mà có</li>
-                            <li><strong>Study Plan sơ sài:</strong> Viết chung chung, thiếu mục tiêu cụ thể</li>
-                            <li><strong>Giấy tờ hết hạn:</strong> Hộ chiếu, giấy khám sức khỏe, sổ tiết kiệm</li>
+                            <li><strong>Tài chính không rõ nguồn gốc:</strong> Sổ tiết kiệm gửi gấp, không chứng minh được nguồn thu nhập</li>
+                            <li><strong>Sổ đóng băng sai ngân hàng:</strong> Nhiều trường yêu cầu sổ đóng băng tại Shinhan/Woori Bank, không phải ngân hàng VN thông thường</li>
+                            <li><strong>Study Plan sơ sài:</strong> Viết chung chung, thiếu mục tiêu cụ thể, không thể hiện ý định về nước</li>
+                            <li><strong>Giấy tờ hết hạn:</strong> Hộ chiếu, giấy khám sức khỏe, sổ tiết kiệm, chứng chỉ TOPIK</li>
                             <li><strong>Thiếu tem hợp pháp hóa lãnh sự:</strong> Tem vàng (Sở Ngoại vụ) + tem tím (Lãnh sự quán Hàn)</li>
-                            <li><strong>Dịch thuật không chính xác:</strong> Dịch sai thông tin, thiếu dấu công chứng</li>
+                            <li><strong>Đơn xin visa điền sai:</strong> Điền bằng tiếng Việt (phải là Anh/Hàn), ký sai chỗ, thiếu thông tin</li>
+                            <li><strong>Dịch thuật không chính xác:</strong> Dịch sai thông tin, thiếu dấu công chứng dịch thuật</li>
                             <li><strong>Nộp hồ sơ trễ hạn:</strong> Mỗi trường có deadline riêng, cần kiểm tra kỹ</li>
                         </ul>
+                    </div>
+
+                    <!-- KVAC Section -->
+                    <h2 id="kvac" style="margin:32px 0 16px; display:flex; align-items:center; gap:12px;">
+                        <span style="width:32px; height:32px; border-radius:50%; background:#fce4ec; display:flex; align-items:center; justify-content:center; color:#c62828; font-size:1rem;">🏢</span>
+                        KVAC - Trung tâm đăng ký visa Hàn Quốc
+                    </h2>
+                    <div class="doc-card" style="border-left:4px solid #e74c3c;">
+                        <p style="color:var(--text-secondary); line-height:1.8; margin-bottom:16px;">
+                            <strong>KVAC (Korea Visa Application Center)</strong> là trung tâm được chính phủ Hàn Quốc ủy quyền tiếp nhận hồ sơ xin visa. 
+                            Mọi hồ sơ du học D-2 và D-4 đều phải nộp qua KVAC. KVAC <strong>chỉ tiếp nhận</strong>, không quyết định cấp visa.
+                        </p>
+                        
+                        <div style="display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-bottom:16px;">
+                            <div style="background:var(--bg-secondary); padding:16px; border-radius:var(--radius-md);">
+                                <h4 style="color:#e74c3c; margin-bottom:6px;">📍 Hà Nội</h4>
+                                <p style="font-size:0.85rem; color:var(--text-secondary);">Tầng 12, Discovery Complex,<br>302 Cầu Giấy, P. Dịch Vọng, Q. Cầu Giấy</p>
+                                <a href="https://www.visaforkorea-vt.com/" target="_blank" style="font-size:0.82rem; color:var(--primary);">visaforkorea-vt.com →</a>
+                            </div>
+                            <div style="background:var(--bg-secondary); padding:16px; border-radius:var(--radius-md);">
+                                <h4 style="color:#e74c3c; margin-bottom:6px;">📍 TP. Hồ Chí Minh</h4>
+                                <p style="font-size:0.85rem; color:var(--text-secondary);">253 Điện Biên Phủ,<br>Phường Võ Thị Sáu, Quận 3</p>
+                                <a href="https://www.visaforkorea-hc.com/" target="_blank" style="font-size:0.82rem; color:var(--primary);">visaforkorea-hc.com →</a>
+                            </div>
+                        </div>
+
+                        <h4>Quy trình nộp hồ sơ tại KVAC:</h4>
+                        <ol style="padding-left:20px; color:var(--text-secondary); line-height:2; font-size:0.9rem; margin-bottom:16px;">
+                            <li><strong>Đặt lịch hẹn online</strong> trên website KVAC (tạo tài khoản → chọn loại visa → chọn ngày giờ)</li>
+                            <li><strong>In phiếu xác nhận lịch hẹn</strong> và mang theo khi đi nộp</li>
+                            <li><strong>Đến KVAC</strong> đúng giờ, lấy số thứ tự, đợi đến lượt (nên đến trước 10h sáng)</li>
+                            <li><strong>Kiểm tra hồ sơ</strong> lần cuối trước khi nộp</li>
+                            <li><strong>Đóng lệ phí:</strong> Phí visa + phí dịch vụ KVAC (~390K VNĐ)</li>
+                            <li><strong>Nhận kết quả</strong> sau ~20 ngày làm việc</li>
+                        </ol>
+
+                        <a href="#" onclick="DossierApp.showTemplate('kvac-guide'); return false;" style="color:var(--primary); font-weight:600;">📋 Xem hướng dẫn chi tiết tại KVAC →</a>
+                    </div>
+
+                    <!-- Mẫu đơn visa -->
+                    <h2 id="visa-form" style="margin:32px 0 16px; display:flex; align-items:center; gap:12px;">
+                        <span style="width:32px; height:32px; border-radius:50%; background:#e3f2fd; display:flex; align-items:center; justify-content:center; color:#1565c0; font-size:1rem;">📄</span>
+                        Mẫu đơn xin visa Hàn Quốc
+                    </h2>
+                    <div class="doc-card" style="border-left:4px solid #3498db;">
+                        <p style="color:var(--text-secondary); line-height:1.8; margin-bottom:12px;">
+                            Mẫu đơn xin visa Hàn Quốc phải được điền bằng <strong>tiếng Anh hoặc tiếng Hàn</strong>. 
+                            Nếu điền bằng tiếng Việt, bạn sẽ <strong>không được chấp nhận</strong> và phải làm lại.
+                        </p>
+                        
+                        <div style="background:#fff3cd; border:1px solid #ffc107; padding:12px 16px; border-radius:var(--radius-sm); margin-bottom:16px; font-size:0.85rem; color:#856404;">
+                            <strong>⚠️ Cực kỳ quan trọng:</strong> Mẫu đơn xin visa thay đổi thường xuyên. 
+                            Luôn tải mẫu <strong>mới nhất</strong> từ website KVAC ngay trước khi nộp. Đừng dùng mẫu cũ từ các nguồn không chính thống!
+                        </div>
+
+                        <h4>Nơi tải mẫu đơn:</h4>
+                        <ul style="padding-left:20px; color:var(--text-secondary); line-height:2; font-size:0.9rem;">
+                            <li><a href="https://www.visaforkorea-vt.com/" target="_blank" style="color:var(--primary);">KVAC Hà Nội → visaforkorea-vt.com</a> (mục Biểu mẫu)</li>
+                            <li><a href="https://www.visaforkorea-hc.com/" target="_blank" style="color:var(--primary);">KVAC TP.HCM → visaforkorea-hc.com</a> (mục Biểu mẫu)</li>
+                            <li><a href="https://www.visa.go.kr/" target="_blank" style="color:var(--primary);">Cổng visa Hàn Quốc → visa.go.kr</a> (Application Form)</li>
+                        </ul>
+
+                        <a href="#" onclick="DossierApp.showTemplate('visa-application'); return false;" style="display:inline-block; margin-top:12px; color:var(--primary); font-weight:600;">📝 Xem hướng dẫn điền từng mục trong đơn →</a>
+                    </div>
+
+                    <!-- Cảnh báo quan trọng -->
+                    <h2 id="canh-bao" style="margin:32px 0 16px; display:flex; align-items:center; gap:12px;">
+                        <span style="width:32px; height:32px; border-radius:50%; background:#ffebee; display:flex; align-items:center; justify-content:center; color:#c0392b; font-size:1rem;">🚨</span>
+                        Cảnh báo quan trọng về Visa
+                    </h2>
+                    <div class="doc-card" style="border-left:4px solid #c0392b;">
+                        <p style="color:var(--text-secondary); line-height:1.8; margin-bottom:16px;">
+                            Chính sách visa du học Hàn Quốc thay đổi rất nhanh. Dưới đây là những điều bạn <strong>NHẤT ĐỊNH PHẢI BIẾT</strong>:
+                        </p>
+                        <ul style="padding-left:20px; color:var(--text-secondary); line-height:2.2; font-size:0.9rem;">
+                            <li><strong>📉 Siết chặt tỷ lệ bỏ trốn:</strong> Hàn Quốc kiểm soát rất chặt tỷ lệ sinh viên quốc tế bỏ trốn. Các trường có tỷ lệ bỏ trốn cao sẽ bị hạn chế/hủy tư cách cấp visa.</li>
+                            <li><strong>📊 Điểm chuyên cần:</strong> Phải duy trì tối thiểu <strong>70-80%</strong> điểm chuyên cần để được gia hạn visa. Không đạt = mất visa.</li>
+                            <li><strong>🔄 Thay đổi chính sách:</strong> Quy định về visa D-2 và D-4 thay đổi theo từng quý. Luôn kiểm tra website KVAC trước khi nộp.</li>
+                            <li><strong>🏦 Sổ đóng băng:</strong> Nhiều trường Hàn Quốc yêu cầu sổ đóng băng tại <strong>Shinhan Bank</strong> hoặc <strong>Woori Bank</strong> (chi nhánh Việt Nam), không chấp nhận sổ tiết kiệm ngân hàng Việt Nam.</li>
+                            <li><strong>💰 Thu nhập bảo lãnh:</strong> Người bảo lãnh tài chính cần thu nhập ổn định tối thiểu 25-30 triệu VNĐ/tháng, có sao kê ngân hàng rõ ràng.</li>
+                            <li><strong>⏱ Nộp hồ sơ sớm:</strong> Nên nộp hồ sơ visa ít nhất <strong>1-2 tháng</strong> trước kỳ nhập học, vì thời gian xử lý có thể kéo dài.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Links hữu ích -->
+                    <h2 id="links" style="margin:32px 0 16px; display:flex; align-items:center; gap:12px;">
+                        <span style="width:32px; height:32px; border-radius:50%; background:#e8f5e9; display:flex; align-items:center; justify-content:center; color:#2e7d32; font-size:1rem;">🔗</span>
+                        Link hữu ích
+                    </h2>
+                    <div class="doc-card" style="border-left:4px solid #2ecc71;">
+                        <div style="display:grid; grid-template-columns:repeat(auto-fill, minmax(250px, 1fr)); gap:12px;">
+                            <a href="https://www.visa.go.kr/" target="_blank" style="display:block; background:var(--bg-secondary); padding:14px 18px; border-radius:var(--radius-md); color:var(--text-primary); font-weight:600; font-size:0.9rem;">
+                                🌐 visa.go.kr<br><span style="font-weight:400; font-size:0.8rem; color:var(--text-muted);">Cổng thông tin visa chính phủ Hàn Quốc</span>
+                            </a>
+                            <a href="https://www.visaforkorea-vt.com/" target="_blank" style="display:block; background:var(--bg-secondary); padding:14px 18px; border-radius:var(--radius-md); color:var(--text-primary); font-weight:600; font-size:0.9rem;">
+                                📍 visaforkorea-vt.com<br><span style="font-weight:400; font-size:0.8rem; color:var(--text-muted);">KVAC Hà Nội - Đặt lịch & tra cứu</span>
+                            </a>
+                            <a href="https://www.visaforkorea-hc.com/" target="_blank" style="display:block; background:var(--bg-secondary); padding:14px 18px; border-radius:var(--radius-md); color:var(--text-primary); font-weight:600; font-size:0.9rem;">
+                                📍 visaforkorea-hc.com<br><span style="font-weight:400; font-size:0.8rem; color:var(--text-muted);">KVAC TP.HCM - Đặt lịch & tra cứu</span>
+                            </a>
+                            <a href="https://www.shinhan.com.vn/" target="_blank" style="display:block; background:var(--bg-secondary); padding:14px 18px; border-radius:var(--radius-md); color:var(--text-primary); font-weight:600; font-size:0.9rem;">
+                                🏦 Shinhan Bank Vietnam<br><span style="font-weight:400; font-size:0.8rem; color:var(--text-muted);">Mở sổ đóng băng du học Hàn</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>

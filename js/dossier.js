@@ -10,7 +10,7 @@ const DossierApp = {
             { id: 'cccd', icon: '🪪', title: 'Căn cước công dân (CCCD)', desc: 'Bản photo công chứng của học sinh và bố/mẹ (nếu là người bảo lãnh tài chính).', details: 'Photo 2 mặt cùng trang. Công chứng tại UBND phường/xã.' },
             { id: 'household', icon: '🏠', title: 'Sổ hộ khẩu (hoặc CT07)', desc: 'Bản sao công chứng. Nếu ở trọ, xin giấy xác nhận cư trú (CT07) tại công an phường.', details: 'CT07 thay thế sổ hộ khẩu từ 2023. Thời hạn 6 tháng.' },
             { id: 'birth-cert', icon: '👶', title: 'Trích lục khai sinh', desc: 'Bản sao trích lục khai sinh (cấp trong 3 tháng gần nhất).', details: 'Xin tại UBND phường nơi đăng ký khai sinh. Phí: 3,000-5,000đ.' },
-            { id: 'photos', icon: '📸', title: 'Ảnh thẻ (3x4 hoặc 3.5x4.5)', desc: 'Nền trắng, chụp trong 6 tháng gần nhất. Số lượng: 8-12 ảnh.', details: 'Áo sơ mi trắng/có cổ. Không đeo kính. Không chỉnh sửa.' },
+            { id: 'photos', icon: '📸', title: 'Ảnh thẻ (3.5x4.5cm)', desc: 'Nền trắng, chụp trong 6 tháng gần nhất. Số lượng: 8-12 ảnh.', details: 'Áo sơ mi trắng/có cổ. Không đeo kính. Không chỉnh sửa.' },
             { id: 'cv', icon: '📋', title: 'Sơ yếu lý lịch (CV)', desc: 'Tóm tắt thông tin cá nhân, học vấn, kinh nghiệm, kỹ năng.', details: 'Viết bằng tiếng Hàn hoặc tiếng Anh. Dài 1-2 trang A4.' }
         ],
         education: [
@@ -22,14 +22,15 @@ const DossierApp = {
             { id: 'rec-letter', icon: '✉️', title: 'Thư giới thiệu (2-3 thư)', desc: 'Từ giáo viên chủ nhiệm, giáo sư hoặc người quản lý. Có chữ ký + đóng dấu.', details: 'Viết bằng tiếng Anh hoặc tiếng Hàn. Nội dung cụ thể về năng lực học tập.' }
         ],
         finance: [
-            { id: 'bank-book', icon: '🏦', title: 'Sổ tiết kiệm', desc: 'Đứng tên học sinh. Số dư: 10,000-20,000 USD (tùy khu vực). Mở trước 3-6 tháng.', details: 'Seoul: 12,000+ USD, tỉnh khác: 10,000+ USD. Cần giấy xác nhận số dư.' },
-            { id: 'income-proof', icon: '💼', title: 'Chứng minh thu nhập bố/mẹ', desc: 'Hợp đồng lao động, sao kê lương 3-6 tháng, giấy phép kinh doanh (nếu tự kinh doanh).', details: 'Thu nhập tối thiểu: 1,000 USD/tháng. Cần sao kê tài khoản ngân hàng.' },
+            { id: 'bank-book', icon: '🏦', title: 'Sổ tiết kiệm / Sổ đóng băng', desc: 'Sổ tiết kiệm tại VN (10K-20K USD) hoặc sổ đóng băng tại SHINHAN/WOORI Bank (8K-10K USD).', details: 'Visa D-4: 10,000+ USD. Visa D-2 Seoul: 20,000+ USD. Sổ đóng băng tại Shinhan/Woori Bank có giá trị cao hơn.' },
+            { id: 'income-proof', icon: '💼', title: 'Chứng minh thu nhập bố/mẹ', desc: 'HĐLĐ + sao kê lương 3-6 tháng. Thu nhập tối thiểu 25-30 triệu VNĐ/tháng.', details: 'Tự kinh doanh: GPKD + tờ khai thuế. Làm công: HĐLĐ + sao kê + xác nhận lương.' },
+            { id: 'frozen-account', icon: '🇰🇷', title: 'Sổ đóng băng ngân hàng Hàn Quốc', desc: 'Mở tại Shinhan Bank hoặc Woori Bank Việt Nam. Số dư tối thiểu 8,000-10,000 USD.', details: 'Thời hạn đóng băng: 6-12 tháng. Đây là yêu cầu của nhiều trường Hàn Quốc, đặc biệt visa D-4.' },
             { id: 'asset-proof', icon: '🏠', title: 'Giấy tờ sở hữu tài sản', desc: 'Sổ đỏ nhà đất, giấy tờ xe, cổ phiếu... chứng minh tài chính gia đình.', details: 'Đứng tên bố/mẹ. Có thể dùng thêm để tăng độ thuyết phục.' },
             { id: 'sponsor-letter', icon: '📝', title: 'Cam kết bảo lãnh tài chính', desc: 'Cam kết của bố/mẹ về việc chi trả học phí và sinh hoạt phí cho học sinh.', details: 'Có công chứng. Ghi rõ số tiền cam kết và thời gian.' }
         ],
         health: [
-            { id: 'health-check', icon: '🏥', title: 'Giấy khám sức khỏe', desc: 'Khám tổng quát + X-quang phổi tại bệnh viện được ĐSQ Hàn chỉ định.', details: 'Bệnh viện: Bạch Mai, Chợ Rẫy, Đại học Y Dược... Giấy có hiệu lực 6 tháng.' },
-            { id: 'tb-test', icon: '🔬', title: 'Xét nghiệm lao phổi', desc: 'Kết quả X-quang phổi hoặc xét nghiệm IGRA/T-SPOT.', details: 'Nghiêm ngặt: lao phổi là lý do trượt visa phổ biến. Làm đúng bệnh viện chỉ định.' },
+            { id: 'health-check', icon: '🏥', title: 'Giấy khám sức khỏe', desc: 'Khám tổng quát tại bệnh viện được ĐSQ Hàn chỉ định (Bạch Mai, Chợ Rẫy...).', details: 'Bệnh viện: Bạch Mai (HN), Chợ Rẫy (HCM), Đại học Y Dược... Giấy có hiệu lực 6 tháng.' },
+            { id: 'tb-test', icon: '🔬', title: 'Xét nghiệm lao phổi', desc: 'Kết quả X-quang phổi hoặc xét nghiệm IGRA/T-SPOT.', details: 'Lao phổi là lý do trượt visa phổ biến. Làm đúng bệnh viện chỉ định.' },
             { id: 'insurance', icon: '🛡️', title: 'Bảo hiểm du học', desc: 'Mua bảo hiểm du học trước khi bay. Bắt buộc sau khi nhập học.', details: 'Bảo hiểm NHIS: ~65 USD/tháng. Có thể mua bảo hiểm quốc tế trước khi bay.' }
         ]
     },
@@ -108,6 +109,99 @@ const DossierApp = {
                 <div class="info-box"><p><strong>⚠️ Lưu ý:</strong> Thư giới thiệu cần được viết trên giấy có tiêu đề của trường/cơ quan, có chữ ký và đóng dấu. Bản dịch tiếng Hàn/Anh cũng cần có dấu xác nhận.</p></div>
             `
         },
+        'visa-application': {
+            title: '🇰🇷 Hướng dẫn điền Mẫu đơn xin Visa Hàn Quốc',
+            content: `
+                <div class="info-box"><p><strong>🔑 Quan trọng:</strong> Mẫu đơn xin visa Hàn Quốc phải được điền bằng <strong>tiếng Anh hoặc tiếng Hàn</strong>. Không được điền bằng tiếng Việt. Điền sai là mất thời gian và có thể bị yêu cầu làm lại.</p></div>
+                
+                <h3>Hướng dẫn từng mục:</h3>
+                
+                <h4>1. Thông tin cá nhân (Personal Information)</h4>
+                <ul>
+                    <li><strong>Full Name:</strong> Viết IN HOA, đúng như trong hộ chiếu</li>
+                    <li><strong>Date of Birth:</strong> Định dạng YYYY-MM-DD (vd: 2006-05-15)</li>
+                    <li><strong>Nationality:</strong> VIETNAM</li>
+                    <li><strong>Passport No:</strong> Số hộ chiếu</li>
+                </ul>
+
+                <h4>2. Thông tin thị thực (Visa Information)</h4>
+                <ul>
+                    <li><strong>Visa Type:</strong> D-2 (du học đại học) hoặc D-4 (du học tiếng)</li>
+                    <li><strong>Intended Period of Stay:</strong> 1 year / 2 years tùy chương trình</li>
+                    <li><strong>Purpose of Entry:</strong> STUDY</li>
+                </ul>
+
+                <h4>3. Thông tin liên hệ (Contact Information)</h4>
+                <ul>
+                    <li><strong>Address in Korea:</strong> Địa chỉ ký túc xá/nhà trọ nếu đã biết (có thể ghi tên trường)</li>
+                    <li><strong>Contact in Korea:</strong> Số điện thoại của trường/người liên hệ</li>
+                    <li><strong>Emergency Contact:</strong> Thông tin bố/mẹ tại Việt Nam</li>
+                </ul>
+
+                <h4>4. Lịch sử du lịch (Travel History)</h4>
+                <ul>
+                    <li>Liệt kê các nước đã từng đến trong 5 năm gần nhất</li>
+                    <li>Nếu chưa từng đi nước ngoài: ghi "NONE" hoặc "NO PREVIOUS TRAVEL"</li>
+                    <li>Đã từng bị từ chối visa? Khai báo trung thực</li>
+                </ul>
+
+                <h4>5. Mẫu đơn tải tại đâu?</h4>
+                <p>Tải mẫu đơn xin Visa Hàn Quốc tại các link sau:</p>
+                <ul>
+                    <li><strong>Website KVAC Hà Nội:</strong> visaforkorea-vt.com → mục "Biểu mẫu"</li>
+                    <li><strong>Website KVAC TP.HCM:</strong> visaforkorea-hc.com → mục "Biểu mẫu"</li>
+                    <li><strong>Cổng thông tin Visa:</strong> visa.go.kr → "Application Form"</li>
+                </ul>
+
+                <div class="info-box"><p><strong>⚠️ Lưu ý cực kỳ quan trọng:</strong> Đơn xin visa thay đổi thường xuyên. <strong>LUÔN</strong> tải mẫu mới nhất từ website KVAC ngay trước khi nộp. Đừng dùng mẫu cũ từ các nguồn không chính thống.</p></div>
+            `
+        },
+        'kvac-guide': {
+            title: '🏢 Hướng dẫn nộp hồ sơ tại KVAC',
+            content: `
+                <div class="info-box"><p><strong>🏢 KVAC (Korea Visa Application Center)</strong> là trung tâm tiếp nhận hồ sơ xin visa Hàn Quốc được chính phủ Hàn Quốc ủy quyền. KVAC nhận hồ sơ, kiểm tra giấy tờ, thu lệ phí và trả kết quả. <strong>KVAC KHÔNG quyết định việc cấp visa</strong> - quyền này thuộc về Đại sứ quán/Lãnh sự quán Hàn Quốc.</p></div>
+
+                <h3>📍 Địa chỉ KVAC</h3>
+                <table>
+                    <tr><th>Khu vực</th><th>Địa chỉ</th><th>Website</th></tr>
+                    <tr>
+                        <td><strong>Hà Nội</strong></td>
+                        <td>Tầng 12, Tòa nhà Discovery Complex,<br>302 Cầu Giấy, Phường Dịch Vọng, Q. Cầu Giấy</td>
+                        <td><a href="https://www.visaforkorea-vt.com/" target="_blank">visaforkorea-vt.com</a></td>
+                    </tr>
+                    <tr>
+                        <td><strong>TP. Hồ Chí Minh</strong></td>
+                        <td>253 Điện Biên Phủ,<br>Phường Võ Thị Sáu, Quận 3</td>
+                        <td><a href="https://www.visaforkorea-hc.com/" target="_blank">visaforkorea-hc.com</a></td>
+                    </tr>
+                </table>
+
+                <h3>📋 Quy trình nộp hồ sơ</h3>
+                <ol>
+                    <li><strong>Bước 1 - Đặt lịch hẹn:</strong> Đăng ký tài khoản trên website KVAC Hà Nội hoặc TP.HCM. Chọn loại visa, ngày giờ trống. In phiếu xác nhận lịch hẹn.</li>
+                    <li><strong>Bước 2 - Chuẩn bị hồ sơ:</strong> Hoàn thiện đầy đủ giấy tờ theo danh mục. Photo, công chứng, dịch thuật.</li>
+                    <li><strong>Bước 3 - Đến KVAC:</strong> Mang theo phiếu hẹn + bộ hồ sơ gốc + bản photo. Nên đến trước 10h sáng để tránh đông.</li>
+                    <li><strong>Bước 4 - Nộp hồ sơ:</strong> Lấy số thứ tự, đợi đến lượt. Kiểm tra lại toàn bộ hồ sơ trước khi nộp.</li>
+                    <li><strong>Bước 5 - Đóng phí:</strong> Đóng phí visa + phí dịch vụ KVAC. Giữ lại biên lai.</li>
+                    <li><strong>Bước 6 - Nhận kết quả:</strong> Quay lại KVAC theo ngày hẹn để nhận hộ chiếu + kết quả visa.</li>
+                </ol>
+
+                <h3>💰 Lệ phí tham khảo</h3>
+                <ul>
+                    <li><strong>Phí visa D-2/D-4:</strong> Tùy loại visa (tham khảo trên website KVAC)</li>
+                    <li><strong>Phí dịch vụ KVAC:</strong> Khoảng 390,000 VNĐ (phí phổ thông)</li>
+                    <li><strong>Phí phòng chờ cao cấp:</strong> Cao hơn, tùy lựa chọn</li>
+                </ul>
+
+                <h3>⏱ Thời gian xử lý</h3>
+                <p>Thông thường ~20 ngày làm việc. Có thể kéo dài nếu cần bổ sung hồ sơ hoặc phỏng vấn. Hãy nộp hồ sơ ít nhất 1-2 tháng trước kỳ nhập học.</p>
+
+                <div class="info-box"><p><strong>🔗 Link hữu ích:</strong><br>
+                • Website chính phủ Hàn Quốc: <a href="https://www.visa.go.kr/" target="_blank">visa.go.kr</a> (tra cứu kết quả visa)<br>
+                • KVAC Hà Nội: <a href="https://www.visaforkorea-vt.com/" target="_blank">visaforkorea-vt.com</a><br>
+                • KVAC TP.HCM: <a href="https://www.visaforkorea-hc.com/" target="_blank">visaforkorea-hc.com</a></p></div>
+            `
+        },
         'checklist': {
             title: '✅ Checklist đầy đủ giấy tờ du học Hàn Quốc',
             content: `
@@ -117,12 +211,13 @@ const DossierApp = {
                     <tr><td rowspan="4">Cá nhân</td><td>Hộ chiếu</td><td>Còn hạn 6 tháng+</td></tr>
                     <tr><td>CCCD (bản công chứng)</td><td>Của học sinh + bố mẹ</td></tr>
                     <tr><td>Trích lục khai sinh</td><td>Cấp trong 3 tháng</td></tr>
-                    <tr><td>Ảnh thẻ 3x4 (8-12 ảnh)</td><td>Nền trắng, áo trắng</td></tr>
+                    <tr><td>Ảnh thẻ 3.5x4.5 (8-12 ảnh)</td><td>Nền trắng, áo trắng</td></tr>
                     <tr><td rowspan="3">Học vấn</td><td>Bằng tốt nghiệp</td><td>Công chứng + dịch thuật</td></tr>
                     <tr><td>Học bạ/Bảng điểm</td><td>Tem vàng + tem tím</td></tr>
                     <tr><td>Thư giới thiệu (2-3)</td><td>Có chữ ký + dấu</td></tr>
-                    <tr><td rowspan="3">Tài chính</td><td>Sổ tiết kiệm</td><td>10,000-20,000 USD</td></tr>
-                    <tr><td>CM thu nhập bố mẹ</td><td>HĐLĐ/GPKD + sao kê</td></tr>
+                    <tr><td rowspan="4">Tài chính</td><td>Sổ tiết kiệm/đóng băng</td><td>10K-20K USD hoặc 8K-10K đóng băng</td></tr>
+                    <tr><td>CM thu nhập bố mẹ</td><td>25-30 triệu/tháng</td></tr>
+                    <tr><td>Sổ đóng băng NH Hàn Quốc</td><td>Shinhan/Woori Bank</td></tr>
                     <tr><td>Cam kết bảo lãnh</td><td>Công chứng</td></tr>
                     <tr><td rowspan="2">Sức khỏe</td><td>Khám sức khỏe</td><td>BV chỉ định</td></tr>
                     <tr><td>X-quang phổi</td><td>Kết quả trong 6 tháng</td></tr>
@@ -139,8 +234,8 @@ const DossierApp = {
                 { time: 'T3 - T6 năm trước', title: 'Định hướng', desc: 'Chọn trường, ngành học. Bắt đầu học tiếng Hàn hoặc luyện IELTS.' },
                 { time: 'T7 - T8 năm trước', title: 'Chuẩn bị hồ sơ', desc: 'Thu thập giấy tờ, dịch thuật công chứng. Thi TOPIK/IELTS nếu cần.' },
                 { time: 'T9 - T10 năm trước', title: 'Nộp đơn xin học', desc: 'Hoàn thiện hồ sơ xin nhập học. Nộp qua website trường hoặc gửi bản cứng.' },
-                { time: 'T11 - T12 năm trước', title: 'Nhận kết quả', desc: 'Nhận thư mời nhập học. Chuẩn bị sổ tiết kiệm và hồ sơ tài chính.' },
-                { time: 'T1 cùng năm', title: 'Xin visa', desc: 'Nộp hồ sơ xin visa D-2/D-4 tại ĐSQ Hàn Quốc. Chuẩn bị hành lý.' },
+                { time: 'T11 - T12 năm trước', title: 'Nhận kết quả', desc: 'Nhận thư mời nhập học. Mở sổ tiết kiệm/sổ đóng băng tại Shinhan/Woori Bank.' },
+                { time: 'T1 cùng năm', title: 'Xin visa tại KVAC', desc: 'Đặt lịch online tại visaforkorea. Nộp hồ sơ visa D-2/D-4 tại KVAC Hà Nội hoặc TP.HCM. Chuẩn bị hành lý.' },
                 { time: 'Đầu tháng 3', title: '✈️ Lên đường!', desc: 'Bay sang Hàn Quốc. Làm thủ tục nhập học, đăng ký cư trú.' }
             ]
         },
@@ -150,8 +245,8 @@ const DossierApp = {
                 { time: 'T9 - T12 năm trước', title: 'Định hướng', desc: 'Chọn trường, ngành học. Bắt đầu học tiếng Hàn hoặc luyện thi IELTS.' },
                 { time: 'T1 - T2 cùng năm', title: 'Chuẩn bị hồ sơ', desc: 'Thu thập giấy tờ, dịch thuật công chứng. Thi TOPIK/IELTS.' },
                 { time: 'T3 - T4 cùng năm', title: 'Nộp đơn xin học', desc: 'Hoàn thiện hồ sơ xin nhập học. Nộp đúng hạn.' },
-                { time: 'T5 - T6 cùng năm', title: 'Nhận kết quả', desc: 'Nhận thư mời. Mở sổ tiết kiệm (tối thiểu 3 tháng trước).' },
-                { time: 'T7 - T8 cùng năm', title: 'Xin visa', desc: 'Nộp hồ sơ visa. Mua vé máy bay, chuẩn bị hành lý.' },
+                { time: 'T5 - T6 cùng năm', title: 'Nhận kết quả', desc: 'Nhận thư mời. Mở sổ tiết kiệm + sổ đóng băng NH Hàn Quốc.' },
+                { time: 'T7 - T8 cùng năm', title: 'Xin visa tại KVAC', desc: 'Đặt lịch online. Nộp hồ sơ visa tại KVAC. Mua vé máy bay.' },
                 { time: 'Đầu tháng 9', title: '✈️ Lên đường!', desc: 'Bay sang Hàn Quốc. Nhập học và khám phá cuộc sống mới.' }
             ]
         }
@@ -159,9 +254,9 @@ const DossierApp = {
 
     init() {
         if (!document.querySelector('.dossier-sidebar')) return;
-        this.renderDocuments('personal', 'dossier-personal', ['🪪', '📄', '🏠', '👶', '📸', '📋']);
+        this.renderDocuments('personal', 'dossier-personal', ['🛂', '📄', '🏠', '👶', '📸', '📋']);
         this.renderDocuments('education', 'dossier-education', ['🎓', '📊', '📜', '🇰🇷', '📖', '✉️']);
-        this.renderDocuments('finance', 'dossier-finance', ['🏦', '💼', '🏠', '📝']);
+        this.renderDocuments('finance', 'dossier-finance', ['🏦', '💼', '🇰🇷', '🏠', '📝']);
         this.renderDocuments('health', 'dossier-health', ['🏥', '🔬', '🛡️']);
         this.renderTimeline('spring');
         this.updateProgress();
@@ -221,7 +316,6 @@ const DossierApp = {
         const saved = this.getProgress();
         saved[id] = status;
         this.saveProgress(saved);
-        // Update card UI via data attribute
         const select = document.querySelector(`select[data-doc-id="${id}"]`);
         const card = select?.closest('.doc-card');
         if (card) {
