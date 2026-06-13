@@ -567,7 +567,7 @@ const BlogApp = {
         const blogDesc = post.excerpt || post.content.replace(/<[^>]*>/g, '').substring(0, 160);
         document.getElementById('blogTitle')?.textContent = `${post.title} - Thông Tin Trường Hàn`;
         document.getElementById('blogDesc')?.setAttribute('content', blogDesc);
-        document.getElementById('blogCanonical')?.setAttribute('href', `https://thongtintruonghan.com/bai-viet.html?id=${post.id}`);
+        document.getElementById('blogCanonical')?.setAttribute('href', `https://hansarang.vercel.app/bai-viet.html?id=${post.id}`);
         document.getElementById('ogBlogTitle')?.setAttribute('content', post.title);
         document.getElementById('ogBlogDesc')?.setAttribute('content', blogDesc);
         document.getElementById('twBlogTitle')?.setAttribute('content', post.title);

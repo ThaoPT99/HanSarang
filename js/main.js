@@ -374,7 +374,7 @@ function initUniversityDetail() {
     document.getElementById('detailDesc')?.setAttribute('content', desc);
     document.getElementById('ogDesc')?.setAttribute('content', desc);
     document.getElementById('twDesc')?.setAttribute('content', desc);
-    document.getElementById('detailCanonical')?.setAttribute('href', `https://thongtintruonghan.com/chi-tiet-truong.html?id=${u.id}`);
+    document.getElementById('detailCanonical')?.setAttribute('href', `https://hansarang.vercel.app/chi-tiet-truong.html?id=${u.id}`);
 
     // Inject JSON-LD structured data (CollegeOrUniversity)
     const ldScript = document.createElement('script');
@@ -385,7 +385,7 @@ function initUniversityDetail() {
         "name": u.name,
         "alternateName": u.nameEn,
         "description": u.description,
-        "url": `https://thongtintruonghan.com/chi-tiet-truong.html?id=${u.id}`,
+        "url": `https://hansarang.vercel.app/chi-tiet-truong.html?id=${u.id}`,
         "address": {
             "@type": "PostalAddress",
             "addressLocality": u.region,

@@ -4,107 +4,113 @@
 
   <!-- Main Pages -->
   <url>
-    <loc>https://thongtintruonghan.com/</loc>
+    <loc>https://hansarang.vercel.app/</loc>
     <lastmod>2026-06-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://thongtintruonghan.com/truong-hoc.html</loc>
+    <loc>https://hansarang.vercel.app/truong-hoc.html</loc>
     <lastmod>2026-06-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://thongtintruonghan.com/blog.html</loc>
+    <loc>https://hansarang.vercel.app/blog.html</loc>
     <lastmod>2026-06-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://thongtintruonghan.com/cam-nang-du-hoc.html</loc>
+    <loc>https://hansarang.vercel.app/cam-nang-du-hoc.html</loc>
     <lastmod>2026-06-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://thongtintruonghan.com/hoi-dap.html</loc>
+    <loc>https://hansarang.vercel.app/hoi-dap.html</loc>
     <lastmod>2026-06-14</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://thongtintruonghan.com/bai-viet.html</loc>
+    <loc>https://hansarang.vercel.app/bai-viet.html</loc>
     <lastmod>2026-06-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
+  <url>
+    <loc>https://hansarang.vercel.app/ho-so.html</loc>
+    <lastmod>2026-06-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
 
   <!-- SEOUL - SKY & Top Universities -->
-  <url><loc>https://thongtintruonghan.com/chi-tiet-truong.html?id=seoul-national-university</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://thongtintruonghan.com/chi-tiet-truong.html?id=korea-university</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://thongtintruonghan.com/chi-tiet-truong.html?id=yonsei-university</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://thongtintruonghan.com/chi-tiet-truong.html?id=sungkyunkwan-university</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://thongtintruonghan.com/chi-tiet-truong.html?id=hanyang-university</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://thongtintruonghan.com/chi-tiet-truong.html?id=ewha-womans-university</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://thongtintruonghan.com/chi-tiet-truong.html?id=sogang-university</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://thongtintruonghan.com/chi-tiet-truong.html?id=chung-ang-university</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://thongtintruonghan.com/chi-tiet-truong.html?id=kyung-hee-university</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://thongtintruonghan.com/chi-tiet-truong.html?id=hongik-university</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://thongtintruonghan.com/chi-tiet-truong.html?id=sejong-university</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://thongtintruonghan.com/chi-tiet-truong.html?id=dongguk-university</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://thongtintruonghan.com/chi-tiet-truong.html?id=sookmyung-womens-university</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://thongtintruonghan.com/chi-tiet-truong.html?id=konkuk-university</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://thongtintruonghan.com/chi-tiet-truong.html?id=kookmin-university</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://thongtintruonghan.com/chi-tiet-truong.html?id=university-of-seoul</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://hansarang.vercel.app/chi-tiet-truong.html?id=seoul-national-university</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://hansarang.vercel.app/chi-tiet-truong.html?id=korea-university</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://hansarang.vercel.app/chi-tiet-truong.html?id=yonsei-university</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://hansarang.vercel.app/chi-tiet-truong.html?id=sungkyunkwan-university</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://hansarang.vercel.app/chi-tiet-truong.html?id=hanyang-university</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://hansarang.vercel.app/chi-tiet-truong.html?id=ewha-womans-university</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://hansarang.vercel.app/chi-tiet-truong.html?id=sogang-university</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://hansarang.vercel.app/chi-tiet-truong.html?id=chung-ang-university</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://hansarang.vercel.app/chi-tiet-truong.html?id=kyung-hee-university</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://hansarang.vercel.app/chi-tiet-truong.html?id=hongik-university</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://hansarang.vercel.app/chi-tiet-truong.html?id=sejong-university</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://hansarang.vercel.app/chi-tiet-truong.html?id=dongguk-university</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://hansarang.vercel.app/chi-tiet-truong.html?id=sookmyung-womens-university</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://hansarang.vercel.app/chi-tiet-truong.html?id=konkuk-university</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://hansarang.vercel.app/chi-tiet-truong.html?id=kookmin-university</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://hansarang.vercel.app/chi-tiet-truong.html?id=university-of-seoul</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
 
   <!-- GYEONGGI, INCHEON -->
-  <url><loc>https://thongtintruonghan.com/chi-tiet-truong.html?id=ajou-university</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://thongtintruonghan.com/chi-tiet-truong.html?id=inha-university</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://hansarang.vercel.app/chi-tiet-truong.html?id=ajou-university</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://hansarang.vercel.app/chi-tiet-truong.html?id=inha-university</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
 
   <!-- BUSAN -->
-  <url><loc>https://thongtintruonghan.com/chi-tiet-truong.html?id=pusan-national-university</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://thongtintruonghan.com/chi-tiet-truong.html?id=dong-a-university</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://hansarang.vercel.app/chi-tiet-truong.html?id=pusan-national-university</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://hansarang.vercel.app/chi-tiet-truong.html?id=dong-a-university</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
 
   <!-- DAEGU, GYEONGBUK -->
-  <url><loc>https://thongtintruonghan.com/chi-tiet-truong.html?id=kyungpook-national-university</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://thongtintruonghan.com/chi-tiet-truong.html?id=yeungnam-university</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://hansarang.vercel.app/chi-tiet-truong.html?id=kyungpook-national-university</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://hansarang.vercel.app/chi-tiet-truong.html?id=yeungnam-university</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
 
   <!-- DAEJEON, CHUNGCHEONG -->
-  <url><loc>https://thongtintruonghan.com/chi-tiet-truong.html?id=kaist</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://thongtintruonghan.com/chi-tiet-truong.html?id=chungnam-national-university</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://hansarang.vercel.app/chi-tiet-truong.html?id=kaist</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://hansarang.vercel.app/chi-tiet-truong.html?id=chungnam-national-university</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
 
   <!-- GANGWON -->
-  <url><loc>https://thongtintruonghan.com/chi-tiet-truong.html?id=kangwon-national-university</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://hansarang.vercel.app/chi-tiet-truong.html?id=kangwon-national-university</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
 
   <!-- JEONLLA -->
-  <url><loc>https://thongtintruonghan.com/chi-tiet-truong.html?id=chonnam-national-university</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://thongtintruonghan.com/chi-tiet-truong.html?id=chonbuk-national-university</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://hansarang.vercel.app/chi-tiet-truong.html?id=chonnam-national-university</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://hansarang.vercel.app/chi-tiet-truong.html?id=chonbuk-national-university</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
 
   <!-- JEJU -->
-  <url><loc>https://thongtintruonghan.com/chi-tiet-truong.html?id=jeju-national-university</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://hansarang.vercel.app/chi-tiet-truong.html?id=jeju-national-university</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
 
   <!-- Specialized Universities (Arts, Science & Technology) -->
-  <url><loc>https://thongtintruonghan.com/chi-tiet-truong.html?id=korea-national-university-of-arts</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://thongtintruonghan.com/chi-tiet-truong.html?id=postech</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://thongtintruonghan.com/chi-tiet-truong.html?id=unist</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://thongtintruonghan.com/chi-tiet-truong.html?id=dgist</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://thongtintruonghan.com/chi-tiet-truong.html?id=gist</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://hansarang.vercel.app/chi-tiet-truong.html?id=korea-national-university-of-arts</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://hansarang.vercel.app/chi-tiet-truong.html?id=postech</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://hansarang.vercel.app/chi-tiet-truong.html?id=unist</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://hansarang.vercel.app/chi-tiet-truong.html?id=dgist</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://hansarang.vercel.app/chi-tiet-truong.html?id=gist</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
 
   <!-- Other Universities -->
-  <url><loc>https://thongtintruonghan.com/chi-tiet-truong.html?id=sunchon-national-university</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://thongtintruonghan.com/chi-tiet-truong.html?id=handong-global-university</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://thongtintruonghan.com/chi-tiet-truong.html?id=pukyong-national-university</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://thongtintruonghan.com/chi-tiet-truong.html?id=korea-national-university-of-education</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://thongtintruonghan.com/chi-tiet-truong.html?id=duksung-womens-university</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://thongtintruonghan.com/chi-tiet-truong.html?id=myongji-university</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://thongtintruonghan.com/chi-tiet-truong.html?id=dankook-university</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://thongtintruonghan.com/chi-tiet-truong.html?id=catholic-university-of-korea</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://thongtintruonghan.com/chi-tiet-truong.html?id=kookje-university</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://hansarang.vercel.app/chi-tiet-truong.html?id=sunchon-national-university</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://hansarang.vercel.app/chi-tiet-truong.html?id=handong-global-university</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://hansarang.vercel.app/chi-tiet-truong.html?id=pukyong-national-university</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://hansarang.vercel.app/chi-tiet-truong.html?id=korea-national-university-of-education</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://hansarang.vercel.app/chi-tiet-truong.html?id=duksung-womens-university</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://hansarang.vercel.app/chi-tiet-truong.html?id=myongji-university</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://hansarang.vercel.app/chi-tiet-truong.html?id=dankook-university</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://hansarang.vercel.app/chi-tiet-truong.html?id=catholic-university-of-korea</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://hansarang.vercel.app/chi-tiet-truong.html?id=kookje-university</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
 
   <!-- Language Centers -->
-  <url><loc>https://thongtintruonghan.com/chi-tiet-truong.html?id=yonsei-kli</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://thongtintruonghan.com/chi-tiet-truong.html?id=snu-kli</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://thongtintruonghan.com/chi-tiet-truong.html?id=korea-university-kli</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://hansarang.vercel.app/chi-tiet-truong.html?id=yonsei-kli</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://hansarang.vercel.app/chi-tiet-truong.html?id=snu-kli</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://hansarang.vercel.app/chi-tiet-truong.html?id=korea-university-kli</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
 
 </urlset>

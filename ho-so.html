@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Làm hồ sơ du học Hàn Quốc - Thông Tin Trường Hàn</title>
+    <meta name="description" content="Hướng dẫn chi tiết làm hồ sơ du học Hàn Quốc: danh sách giấy tờ, dịch thuật công chứng, mẫu đơn, study plan, timeline theo kỳ nhập học.">
+    <meta name="keywords" content="làm hồ sơ du học Hàn Quốc, giấy tờ du học Hàn Quốc, dịch thuật công chứng du học Hàn, study plan Hàn Quốc">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://hansarang.vercel.app/ho-so.html">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Làm hồ sơ du học Hàn Quốc - Thông Tin Trường Hàn">
+    <meta property="og:description" content="Hướng dẫn chi tiết làm hồ sơ du học Hàn Quốc: danh sách giấy tờ, dịch thuật, mẫu đơn, study plan, timeline.">
+    <meta property="og:locale" content="vi_VN">
+    <meta name="twitter:card" content="summary_large_image">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XXXXXXXXXX');
+    </script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .dossier-sidebar { position: sticky; top: calc(var(--nav-height) + 24px); }
+        .doc-card { background:var(--bg-primary); border-radius:var(--radius-lg); padding:24px; box-shadow:var(--shadow-sm); margin-bottom:16px; border:1px solid var(--border-light); transition:var(--transition); }
+        .doc-card:hover { box-shadow:var(--shadow-md); }
+        .doc-card.completed { border-left:4px solid #2ecc71; }
+        .doc-card.in-progress { border-left:4px solid #f39c12; }
+        .doc-card.pending { border-left:4px solid var(--border); }
+        .doc-header { display:flex; align-items:center; gap:16px; margin-bottom:12px; }
+        .doc-icon { width:48px; height:48px; border-radius:var(--radius-md); display:flex; align-items:center; justify-content:center; font-size:1.3rem; flex-shrink:0; }
+        .doc-info { flex:1; }
+        .doc-info h4 { font-size:1rem; margin-bottom:4px; }
+        .doc-info p { font-size:0.82rem; color:var(--text-muted); }
+        .doc-status { font-size:0.78rem; font-weight:600; padding:4px 10px; border-radius:var(--radius-full); }
+        .status-done { background:#d4edda; color:#155724; }
+        .status-progress { background:#fff3cd; color:#856404; }
+        .status-todo { background:var(--bg-secondary); color:var(--text-muted); }
+        .doc-detail { font-size:0.88rem; color:var(--text-secondary); line-height:1.7; padding-top:12px; border-top:1px solid var(--border-light); display:none; }
+        .doc-card.expanded .doc-detail { display:block; }
+        .doc-toggle { cursor:pointer; color:var(--primary); font-weight:600; font-size:0.85rem; }
+        .progress-ring { width:120px; height:120px; border-radius:50%; background:conic-gradient(var(--primary) var(--progress,0%), var(--bg-tertiary) 0); display:flex; align-items:center; justify-content:center; margin:0 auto 16px; position:relative; }
+        .progress-ring-inner { width:90px; height:90px; border-radius:50%; background:var(--bg-primary); display:flex; flex-direction:column; align-items:center; justify-content:center; }
+        .progress-ring-number { font-size:1.8rem; font-weight:800; color:var(--primary); }
+        .progress-ring-label { font-size:0.72rem; color:var(--text-muted); }
+        .timeline-card { background:var(--bg-primary); border-radius:var(--radius-lg); padding:24px; box-shadow:var(--shadow-sm); }
+        .semester-tabs { display:flex; gap:8px; margin-bottom:20px; }
+        .semester-tab { padding:8px 20px; border-radius:var(--radius-full); font-weight:600; font-size:0.85rem; cursor:pointer; transition:var(--transition); border:2px solid var(--border); background:var(--bg-primary); }
+        .semester-tab.active { background:var(--primary); color:white; border-color:var(--primary); }
+        .templates-grid { display:grid; grid-template-columns:repeat(auto-fill, minmax(280px, 1fr)); gap:16px; }
+        .template-card { background:var(--bg-primary); border-radius:var(--radius-lg); padding:20px; box-shadow:var(--shadow-sm); border:1px solid var(--border-light); cursor:pointer; transition:var(--transition); }
+        .template-card:hover { transform:translateY(-4px); box-shadow:var(--shadow-md); border-color:var(--primary); }
+        .template-icon { font-size:2rem; margin-bottom:12px; }
+        .template-card h4 { font-size:0.95rem; margin-bottom:6px; }
+        .template-card p { font-size:0.82rem; color:var(--text-muted); }
+        @media (max-width:768px) { .ho-so-grid { grid-template-columns:1fr!important; } }
+    </style>
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <a href="index.html" class="nav-brand"><div class="brand-icon">🇰🇷</div><span>Thông Tin Trường Hàn</span></a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">☰</button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="truong-hoc.html">Trường học</a></li>
+                <li><a href="ho-so.html" class="active">Làm hồ sơ</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="hoi-dap.html">Hỏi đáp</a></li>
+                <li><a href="cam-nang-du-hoc.html">Cẩm nang</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>📋 Làm hồ sơ du học Hàn Quốc</h1>
+            <p>Hướng dẫn toàn diện từ A-Z: danh sách giấy tờ, dịch thuật, mẫu đơn, study plan và timeline theo từng kỳ nhập học</p>
+        </div>
+    </section>
+
+    <section class="page-section">
+        <div class="container">
+            <div style="display:grid; grid-template-columns:300px 1fr; gap:32px; align-items:start;">
+                <!-- Sidebar -->
+                <div class="dossier-sidebar">
+                    <div class="sidebar-card" style="text-align:center;">
+                        <div class="progress-ring" id="progressRing" style="--progress:0%">
+                            <div class="progress-ring-inner">
+                                <span class="progress-ring-number" id="progressNumber">0%</span>
+                                <span class="progress-ring-label">hoàn thành</span>
+                            </div>
+                        </div>
+                        <h4 style="margin-bottom:8px;">Tiến độ hồ sơ</h4>
+                        <p style="font-size:0.85rem; color:var(--text-muted); margin-bottom:16px;">Đánh dấu giấy tờ đã chuẩn bị để theo dõi</p>
+                        <button onclick="DossierApp.resetProgress()" class="btn btn-sm btn-secondary" style="width:100%; justify-content:center;">
+                            <i class="fas fa-redo"></i> Đặt lại
+                        </button>
+                    </div>
+                    <div class="sidebar-card">
+                        <h3>📑 Danh mục</h3>
+                        <div style="display:flex; flex-direction:column; gap:8px; font-size:0.85rem;">
+                            <a href="#giay-to-ca-nhan" style="display:flex; align-items:center; gap:8px; padding:6px 10px; border-radius:var(--radius-sm); color:var(--text-secondary);">
+                                <span style="width:8px; height:8px; border-radius:50%; background:#e74c3c;"></span> Giấy tờ cá nhân
+                            </a>
+                            <a href="#giay-to-hoc-van" style="display:flex; align-items:center; gap:8px; padding:6px 10px; border-radius:var(--radius-sm); color:var(--text-secondary);">
+                                <span style="width:8px; height:8px; border-radius:50%; background:#3498db;"></span> Giấy tờ học vấn
+                            </a>
+                            <a href="#giay-to-tai-chinh" style="display:flex; align-items:center; gap:8px; padding:6px 10px; border-radius:var(--radius-sm); color:var(--text-secondary);">
+                                <span style="width:8px; height:8px; border-radius:50%; background:#2ecc71;"></span> Chứng minh tài chính
+                            </a>
+                            <a href="#giay-to-suc-khoe" style="display:flex; align-items:center; gap:8px; padding:6px 10px; border-radius:var(--radius-sm); color:var(--text-secondary);">
+                                <span style="width:8px; height:8px; border-radius:50%; background:#9b59b6;"></span> Sức khỏe & Khác
+                            </a>
+                            <a href="#mau-don" style="display:flex; align-items:center; gap:8px; padding:6px 10px; border-radius:var(--radius-sm); color:var(--text-secondary);">
+                                <span style="width:8px; height:8px; border-radius:50%; background:#f39c12;"></span> Mẫu đơn & Templates
+                            </a>
+                            <a href="#timeline" style="display:flex; align-items:center; gap:8px; padding:6px 10px; border-radius:var(--radius-sm); color:var(--text-secondary);">
+                                <span style="width:8px; height:8px; border-radius:50%; background:#e74c3c;"></span> Timeline nộp hồ sơ
+                            </a>
+                            <a href="#loi-thuong-gap" style="display:flex; align-items:center; gap:8px; padding:6px 10px; border-radius:var(--radius-sm); color:var(--text-secondary);">
+                                <span style="width:8px; height:8px; border-radius:50%; background:#e67e22;"></span> Lỗi thường gặp
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Main Content -->
+                <div>
+                    <!-- Tổng quan -->
+                    <div class="doc-card" style="border-left:4px solid var(--primary);">
+                        <h2 style="margin-bottom:8px;">🎯 Tổng quan hồ sơ du học Hàn Quốc</h2>
+                        <p style="color:var(--text-secondary); line-height:1.8;">Hồ sơ du học Hàn Quốc gồm <strong>4 nhóm giấy tờ chính</strong>. Hãy tích vào từng mục để theo dõi tiến độ. Tất cả giấy tờ tiếng Việt cần được <strong>dịch thuật công chứng</strong> sang tiếng Hàn hoặc tiếng Anh. Chuẩn bị hồ sơ càng sớm càng tốt, lý tưởng nhất là <strong>6-12 tháng</strong> trước kỳ nhập học.</p>
+                    </div>
+
+                    <!-- 1. Giấy tờ cá nhân -->
+                    <h2 id="giay-to-ca-nhan" style="margin:32px 0 16px; display:flex; align-items:center; gap:12px;">
+                        <span style="width:32px; height:32px; border-radius:50%; background:#fce4ec; display:flex; align-items:center; justify-content:center; color:#c62828; font-size:1rem;">🪪</span>
+                        Giấy tờ cá nhân
+                    </h2>
+                    <div id="dossier-personal"></div>
+
+                    <!-- 2. Giấy tờ học vấn -->
+                    <h2 id="giay-to-hoc-van" style="margin:32px 0 16px; display:flex; align-items:center; gap:12px;">
+                        <span style="width:32px; height:32px; border-radius:50%; background:#e3f2fd; display:flex; align-items:center; justify-content:center; color:#1565c0; font-size:1rem;">🎓</span>
+                        Giấy tờ học vấn
+                    </h2>
+                    <div id="dossier-education"></div>
+
+                    <!-- 3. Chứng minh tài chính -->
+                    <h2 id="giay-to-tai-chinh" style="margin:32px 0 16px; display:flex; align-items:center; gap:12px;">
+                        <span style="width:32px; height:32px; border-radius:50%; background:#e8f5e9; display:flex; align-items:center; justify-content:center; color:#2e7d32; font-size:1rem;">💰</span>
+                        Chứng minh tài chính
+                    </h2>
+                    <div id="dossier-finance"></div>
+
+                    <!-- 4. Sức khỏe & Khác -->
+                    <h2 id="giay-to-suc-khoe" style="margin:32px 0 16px; display:flex; align-items:center; gap:12px;">
+                        <span style="width:32px; height:32px; border-radius:50%; background:#f3e5f5; display:flex; align-items:center; justify-content:center; color:#6a1b9a; font-size:1rem;">🏥</span>
+                        Sức khỏe & Giấy tờ khác
+                    </h2>
+                    <div id="dossier-health"></div>
+
+                    <!-- Mẫu đơn & Templates -->
+                    <h2 id="mau-don" style="margin:32px 0 16px; display:flex; align-items:center; gap:12px;">
+                        <span style="width:32px; height:32px; border-radius:50%; background:#fff3e0; display:flex; align-items:center; justify-content:center; color:#e65100; font-size:1rem;">📄</span>
+                        Mẫu đơn & Templates
+                    </h2>
+                    <div class="templates-grid" id="templatesGrid">
+                        <div class="template-card" onclick="DossierApp.showTemplate('study-plan')">
+                            <div class="template-icon">✍️</div>
+                            <h4>Kế hoạch học tập (Study Plan)</h4>
+                            <p>Mẫu viết study plan chi tiết với cấu trúc 3 phần: giới thiệu, mục tiêu, kế hoạch tương lai</p>
+                        </div>
+                        <div class="template-card" onclick="DossierApp.showTemplate('self-intro')">
+                            <div class="template-icon">👤</div>
+                            <h4>Giới thiệu bản thân</h4>
+                            <p>Hướng dẫn viết thư giới thiệu bản thân ấn tượng cho hồ sơ du học</p>
+                        </div>
+                        <div class="template-card" onclick="DossierApp.showTemplate('rec-letter')">
+                            <div class="template-icon">📝</div>
+                            <h4>Thư giới thiệu (Recommendation)</h4>
+                            <p>Mẫu thư giới thiệu từ giáo viên/giáo sư - yếu tố quan trọng trong hồ sơ</p>
+                        </div>
+                        <div class="template-card" onclick="DossierApp.showTemplate('checklist')">
+                            <div class="template-icon">✅</div>
+                            <h4>Checklist đầy đủ</h4>
+                            <p>Danh sách kiểm tra toàn bộ giấy tờ cần chuẩn bị theo từng giai đoạn</p>
+                        </div>
+                    </div>
+
+                    <!-- Timeline -->
+                    <h2 id="timeline" style="margin:32px 0 16px; display:flex; align-items:center; gap:12px;">
+                        <span style="width:32px; height:32px; border-radius:50%; background:#fce4ec; display:flex; align-items:center; justify-content:center; color:#c62828; font-size:1rem;">🗓️</span>
+                        Timeline nộp hồ sơ theo kỳ nhập học
+                    </h2>
+                    <div class="timeline-card">
+                        <div class="semester-tabs">
+                            <button class="semester-tab active" onclick="DossierApp.switchSemester('spring', this)">🌸 Kỳ tháng 3 (Xuân)</button>
+                            <button class="semester-tab" onclick="DossierApp.switchSemester('fall', this)">🍂 Kỳ tháng 9 (Thu)</button>
+                        </div>
+                        <div id="timelineContent"></div>
+                    </div>
+
+                    <!-- Lỗi thường gặp -->
+                    <h2 id="loi-thuong-gap" style="margin:32px 0 16px; display:flex; align-items:center; gap:12px;">
+                        <span style="width:32px; height:32px; border-radius:50%; background:#fce4ec; display:flex; align-items:center; justify-content:center; color:#e67e22; font-size:1rem;">⚠️</span>
+                        Lỗi thường gặp khi làm hồ sơ
+                    </h2>
+                    <div class="doc-card" style="border-left:4px solid #e67e22;">
+                        <ul style="padding-left:20px; color:var(--text-secondary); line-height:2.2; font-size:0.9rem;">
+                            <li><strong>Hồ sơ không đồng bộ:</strong> Tên trên các giấy tờ khác nhau (CMND khác tên khai sinh)</li>
+                            <li><strong>Sổ tiết kiệm không rõ nguồn gốc:</strong> Không chứng minh được tiền từ đâu mà có</li>
+                            <li><strong>Study Plan sơ sài:</strong> Viết chung chung, thiếu mục tiêu cụ thể</li>
+                            <li><strong>Giấy tờ hết hạn:</strong> Hộ chiếu, giấy khám sức khỏe, sổ tiết kiệm</li>
+                            <li><strong>Thiếu tem hợp pháp hóa lãnh sự:</strong> Tem vàng (Sở Ngoại vụ) + tem tím (Lãnh sự quán Hàn)</li>
+                            <li><strong>Dịch thuật không chính xác:</strong> Dịch sai thông tin, thiếu dấu công chứng</li>
+                            <li><strong>Nộp hồ sơ trễ hạn:</strong> Mỗi trường có deadline riêng, cần kiểm tra kỹ</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Template Modal -->
+    <div id="templateModal" style="display:none; position:fixed; inset:0; background:rgba(0,0,0,0.6); z-index:2000; align-items:center; justify-content:center; backdrop-filter:blur(8px);" onclick="if(event.target===this)DossierApp.closeTemplate()">
+        <div style="background:var(--bg-primary); border-radius:var(--radius-xl); padding:32px; max-width:700px; width:90%; max-height:85vh; overflow-y:auto;">
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:20px;">
+                <h3 id="templateTitle">Mẫu Study Plan</h3>
+                <button onclick="DossierApp.closeTemplate()" style="background:none; border:none; font-size:1.5rem; cursor:pointer; color:var(--text-muted);">✕</button>
+            </div>
+            <div id="templateContent" style="line-height:1.8; font-size:0.9rem; color:var(--text-secondary);"></div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="nav-brand"><div class="brand-icon">🇰🇷</div><span>Thông Tin Trường Hàn</span></div>
+                    <p>Nền tảng thông tin trường đại học Hàn Quốc dành cho sinh viên Việt Nam.</p>
+                </div>
+                <div>
+                    <h4>Dịch vụ</h4>
+                    <ul><li><a href="truong-hoc.html">Tra cứu trường</a></li><li><a href="ho-so.html">Làm hồ sơ</a></li><li><a href="blog.html">Blog du học</a></li></ul>
+                </div>
+                <div>
+                    <h4>Cẩm nang</h4>
+                    <ul><li><a href="cam-nang-du-hoc.html#visa">Visa</a></li><li><a href="cam-nang-du-hoc.html#hoc-bong">Học bổng</a></li></ul>
+                </div>
+                <div>
+                    <h4>Thông tin</h4>
+                    <ul><li><a href="#">Giới thiệu</a></li><li><a href="#">Liên hệ</a></li></ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div>© 2026 ThongTinTruongHan.com</div>
+                <div class="footer-social">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button class="back-to-top" id="backToTop" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
+
+    <script src="js/university-data.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/dossier.js"></script>
+</body>
+</html>
