@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XXXXXXXXXX');
+    </script>
+
+    <title>Hỏi đáp du học Hàn Quốc - Thông Tin Trường Hàn</title>
+    <meta name="description" content="Cộng đồng hỏi đáp về du học Hàn Quốc. Đặt câu hỏi và chia sẻ kinh nghiệm với các du học sinh Việt Nam.">
+    <meta name="keywords" content="hỏi đáp du học Hàn Quốc, forum du học Hàn Quốc, cộng đồng du học sinh Việt Nam tại Hàn Quốc">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://thongtintruonghan.com/hoi-dap.html">
+    
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Hỏi đáp du học Hàn Quốc - Thông Tin Trường Hàn">
+    <meta property="og:description" content="Cộng đồng hỏi đáp về du học Hàn Quốc.">
+    <meta property="og:url" content="https://thongtintruonghan.com/hoi-dap.html">
+    <meta property="og:locale" content="vi_VN">
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Hỏi đáp du học Hàn Quốc - Thông Tin Trường Hàn">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <a href="index.html" class="nav-brand"><div class="brand-icon">🇰🇷</div><span>Thông Tin Trường Hàn</span></a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">☰</button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="truong-hoc.html">Trường học</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="hoi-dap.html" class="active">Hỏi đáp</a></li>
+                <li><a href="truong-hoc.html?compare=true">So sánh</a></li>
+                <li><a href="cam-nang-du-hoc.html">Cẩm nang</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Cộng đồng hỏi đáp</h1>
+            <p>Đặt câu hỏi, chia sẻ kinh nghiệm và kết nối với cộng đồng du học sinh Việt Nam tại Hàn Quốc</p>
+        </div>
+    </section>
+
+    <section class="page-section">
+        <div class="container">
+            <div class="qa-page-layout">
+                <div>
+                    <!-- Ask Form -->
+                    <div class="qa-ask-form" id="qaAskForm">
+                        <h3>💬 Đặt câu hỏi cho cộng đồng</h3>
+                        <input type="text" id="qaQuestionTitle" placeholder="Tiêu đề câu hỏi (ví dụ: Học bổng GKS có khó xin không?)">
+                        <textarea id="qaQuestionContent" placeholder="Mô tả chi tiết câu hỏi của bạn..." style="width:100%; min-height:100px; padding:12px 14px; border:2px solid var(--border); border-radius:var(--radius-md); font-family:inherit; margin-bottom:12px;"></textarea>
+                        <div style="display:flex; gap:8px; align-items:center;">
+                            <input type="text" id="qaQuestionName" placeholder="Tên của bạn (để trống nếu ẩn danh)" style="flex:1;">
+                            <button class="btn btn-primary btn-sm" onclick="QAApp.submitQuestion()">Đăng câu hỏi</button>
+                        </div>
+                    </div>
+
+                    <!-- Question List -->
+                    <div id="qaList">
+                        <!-- Rendered by JS -->
+                    </div>
+
+                    <!-- Detail View (hidden by default) -->
+                    <div id="qaDetail" style="display:none;">
+                        <!-- Rendered by JS -->
+                    </div>
+                </div>
+
+                <!-- Sidebar -->
+                <div>
+                    <div class="sidebar-card">
+                        <h3>📋 Hướng dẫn</h3>
+                        <ul style="list-style:none; padding:0; font-size:0.88rem; color:var(--text-secondary);">
+                            <li style="padding:8px 0; border-bottom:1px solid var(--border-light);">✅ Hãy đặt câu hỏi rõ ràng, cụ thể</li>
+                            <li style="padding:8px 0; border-bottom:1px solid var(--border-light);">✅ Tôn trọng lẫn nhau khi trả lời</li>
+                            <li style="padding:8px 0; border-bottom:1px solid var(--border-light);">✅ Chia sẻ kinh nghiệm thực tế của bạn</li>
+                            <li style="padding:8px 0; border-bottom:1px solid var(--border-light);">✅ Upvote câu trả lời hữu ích</li>
+                            <li style="padding:8px 0;">❌ Không đăng thông tin sai lệch</li>
+                        </ul>
+                    </div>
+                    <div class="sidebar-card">
+                        <h3>📊 Thống kê</h3>
+                        <div id="qaStats">
+                            <p style="font-size:0.9rem; color:var(--text-muted);">Đang tải...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="nav-brand"><div class="brand-icon">🇰🇷</div><span>Thông Tin Trường Hàn</span></div>
+                    <p>Nền tảng thông tin trường đại học Hàn Quốc dành cho sinh viên Việt Nam.</p>
+                </div>
+                <div>
+                    <h4>Khám phá</h4>
+                    <ul><li><a href="truong-hoc.html">Trường học</a></li><li><a href="blog.html">Blog du học</a></li><li><a href="hoi-dap.html">Hỏi đáp</a></li></ul>
+                </div>
+                <div>
+                    <h4>Cẩm nang</h4>
+                    <ul><li><a href="cam-nang-du-hoc.html#visa">Visa</a></li><li><a href="cam-nang-du-hoc.html#hoc-bong">Học bổng</a></li></ul>
+                </div>
+                <div>
+                    <h4>Thông tin</h4>
+                    <ul><li><a href="#">Giới thiệu</a></li><li><a href="#">Liên hệ</a></li></ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div>© 2026 ThongTinTruongHan.com - Dành cho du học sinh Việt Nam</div>
+                <div class="footer-social">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button class="back-to-top" id="backToTop" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
+
+    <script src="js/university-data.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/features.js"></script>
+</body>
+</html>

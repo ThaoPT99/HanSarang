@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XXXXXXXXXX');
+    </script>
+
+    <title>Danh sách trường đại học Hàn Quốc - Thông Tin Trường Hàn</title>
+    <meta name="description" content="Danh sách đầy đủ các trường đại học Hàn Quốc. Tra cứu thông tin, so sánh trường và tìm trường phù hợp với bạn.">
+    <meta name="keywords" content="danh sách trường đại học Hàn Quốc, các trường đại học Hàn Quốc, trường đại học Hàn Quốc cho du học sinh Việt Nam">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://thongtintruonghan.com/truong-hoc.html">
+    
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Danh sách trường đại học Hàn Quốc - Thông Tin Trường Hàn">
+    <meta property="og:description" content="Danh sách đầy đủ các trường đại học Hàn Quốc. Tra cứu thông tin, so sánh trường và tìm trường phù hợp với bạn.">
+    <meta property="og:url" content="https://thongtintruonghan.com/truong-hoc.html">
+    <meta property="og:locale" content="vi_VN">
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Danh sách trường đại học Hàn Quốc - Thông Tin Trường Hàn">
+    <meta name="twitter:description" content="Danh sách đầy đủ các trường đại học Hàn Quốc.">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <a href="index.html" class="nav-brand">
+                <div class="brand-icon">🇰🇷</div>
+                <span>Thông Tin Trường Hàn</span>
+            </a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">☰</button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="truong-hoc.html" class="active">Trường học</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="hoi-dap.html">Hỏi đáp</a></li>
+                <li><a href="truong-hoc.html?compare=true">So sánh</a></li>
+                <li><a href="cam-nang-du-hoc.html">Cẩm nang</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Danh sách trường đại học Hàn Quốc</h1>
+            <p>Tra cứu thông tin chi tiết về các trường đại học Hàn Quốc, so sánh và tìm ngôi trường phù hợp nhất với bạn</p>
+        </div>
+    </section>
+
+    <!-- Filters -->
+    <section class="filters-section" id="filtersSection">
+        <div class="container">
+            <div class="filters-row">
+                <div class="search-box">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="searchInput" placeholder="Tìm kiếm trường..." oninput="filterUniversities()">
+                </div>
+                <div class="filter-group">
+                    <select class="filter-select" id="regionFilter" onchange="filterUniversities()">
+                        <option value="">Tất cả khu vực</option>
+                    </select>
+                    <select class="filter-select" id="typeFilter" onchange="filterUniversities()">
+                        <option value="">Tất cả loại hình</option>
+                        <option value="Công lập">Công lập</option>
+                        <option value="Tư thục">Tư thục</option>
+                        <option value="Trung tâm Ngôn ngữ">Trung tâm Ngôn ngữ</option>
+                    </select>
+                    <select class="filter-select" id="tierFilter" onchange="filterUniversities()">
+                        <option value="">Tất cả nhóm</option>
+                        <option value="SKY">SKY</option>
+                        <option value="Đặc biệt">Đặc biệt (KAIST, POSTECH...)</option>
+                        <option value="Top 10">Top 10</option>
+                        <option value="Top 20">Top 20</option>
+                    </select>
+                </div>
+            </div>
+            <div class="filter-tags" id="filterTags">
+                <span class="filter-tag active" data-tag="" onclick="setTagFilter(this, '')">Tất cả</span>
+                <span class="filter-tag" data-tag="hoc-bong-gks" onclick="setTagFilter(this, 'hoc-bong-gks')">Có học bổng GKS</span>
+                <span class="filter-tag" data-tag="hoc-phi-thap" onclick="setTagFilter(this, 'hoc-phi-thap')">Học phí thấp</span>
+                <span class="filter-tag" data-tag="truyen-thong" onclick="setTagFilter(this, 'truyen-thong')">Truyền thông & Nghệ thuật</span>
+                <span class="filter-tag" data-tag="ky-thuat" onclick="setTagFilter(this, 'ky-thuat')">Kỹ thuật</span>
+                <span class="filter-tag" data-tag="ngon-ngu" onclick="setTagFilter(this, 'ngon-ngu')">Trung tâm Ngôn ngữ</span>
+                <span class="filter-tag" data-tag="nu-sinh" onclick="setTagFilter(this, 'nu-sinh')">Trường Nữ sinh</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- University List -->
+    <section class="page-section">
+        <div class="container">
+            <div class="results-info">
+                <div class="results-count"><strong id="resultsCount">45</strong> trường được tìm thấy</div>
+                <div class="view-toggle">
+                    <button class="active" onclick="setViewMode('grid')" title="Grid view"><i class="fas fa-th-large"></i></button>
+                    <button onclick="setViewMode('list')" title="List view"><i class="fas fa-list"></i></button>
+                </div>
+            </div>
+            <div class="results-grid" id="resultsGrid">
+                <!-- Rendered by JS -->
+            </div>
+            <div class="pagination" id="pagination">
+                <!-- Rendered by JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Compare Tool (hidden by default) -->
+    <section class="compare-section" id="compareSection" style="display: none;">
+        <div class="container">
+            <div class="compare-tool">
+                <h2>So sánh trường đại học</h2>
+                <p style="text-align: center; color: var(--text-secondary); margin-bottom: 24px;">Chọn 2-3 trường để so sánh thông tin chi tiết</p>
+                <div class="compare-selectors" id="compareSelectors">
+                    <div class="compare-select">
+                        <label>Trường 1</label>
+                        <select id="compare1" onchange="updateCompare()">
+                            <option value="">Chọn trường...</option>
+                        </select>
+                    </div>
+                    <div class="compare-select">
+                        <label>Trường 2</label>
+                        <select id="compare2" onchange="updateCompare()">
+                            <option value="">Chọn trường...</option>
+                        </select>
+                    </div>
+                    <div class="compare-select">
+                        <label>Trường 3 (tùy chọn)</label>
+                        <select id="compare3" onchange="updateCompare()">
+                            <option value="">Chọn trường...</option>
+                        </select>
+                    </div>
+                </div>
+                <div id="compareResults"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="nav-brand">
+                        <div class="brand-icon">🇰🇷</div>
+                        <span>Thông Tin Trường Hàn</span>
+                    </div>
+                    <p>Nền tảng thông tin trường đại học Hàn Quốc dành cho sinh viên Việt Nam.</p>
+                </div>
+                <div>
+                    <h4>Danh mục</h4>
+                    <ul>
+                        <li><a href="truong-hoc.html">Trường học</a></li>
+                        <li><a href="truong-hoc.html?filter=seoul">Trường tại Seoul</a></li>
+                        <li><a href="truong-hoc.html?filter=busan">Trường tại Busan</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Cẩm nang</h4>
+                    <ul>
+                        <li><a href="cam-nang-du-hoc.html#visa">Hướng dẫn Visa</a></li>
+                        <li><a href="cam-nang-du-hoc.html#hoc-bong">Học bổng</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Thông tin</h4>
+                    <ul>
+                        <li><a href="#">Giới thiệu</a></li>
+                        <li><a href="#">Liên hệ</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div>© 2026 ThongTinTruongHan.com - Dành cho du học sinh Việt Nam</div>
+                <div class="footer-social">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="js/university-data.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/features.js"></script>
+    <script>document.addEventListener('DOMContentLoaded', () => initUniversityList());</script>
+</body>
+</html>

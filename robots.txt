@@ -1,0 +1,9 @@
+# robots.txt for ThongTinTruongHan.com
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://thongtintruonghan.com/sitemap.xml
+
+# Disallow admin areas
+Disallow: /seo/

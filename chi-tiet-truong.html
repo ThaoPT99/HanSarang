@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XXXXXXXXXX');
+    </script>
+
+    <title id="detailTitle">Chi tiết trường - Thông Tin Trường Hàn</title>
+    <meta name="description" id="detailDesc" content="Thông tin chi tiết về trường đại học Hàn Quốc: học phí, học bổng, yêu cầu đầu vào và đánh giá.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" id="detailCanonical" href="https://thongtintruonghan.com/chi-tiet-truong.html">
+    
+    <meta property="og:type" content="website">
+    <meta property="og:title" id="ogTitle" content="Chi tiết trường - Thông Tin Trường Hàn">
+    <meta property="og:description" id="ogDesc" content="Thông tin chi tiết về trường đại học Hàn Quốc.">
+    <meta property="og:locale" content="vi_VN">
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" id="twTitle" content="Chi tiết trường - Thông Tin Trường Hàn">
+    <meta name="twitter:description" id="twDesc" content="Thông tin chi tiết về trường đại học Hàn Quốc.">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <a href="index.html" class="nav-brand">
+                <div class="brand-icon">🇰🇷</div>
+                <span>Thông Tin Trường Hàn</span>
+            </a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">☰</button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="truong-hoc.html" class="active">Trường học</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="hoi-dap.html">Hỏi đáp</a></li>
+                <li><a href="truong-hoc.html?compare=true">So sánh</a></li>
+                <li><a href="cam-nang-du-hoc.html">Cẩm nang</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="page-header" style="padding: 100px 0 40px;">
+        <div class="container" style="text-align: left;">
+            <a href="truong-hoc.html" style="color: rgba(255,255,255,0.7); margin-bottom: 12px; display: inline-block;">
+                <i class="fas fa-arrow-left"></i> Quay lại danh sách
+            </a>
+        </div>
+    </section>
+
+    <section class="university-detail">
+        <div class="container" id="detailContainer">
+            <div class="loading">
+                <div class="loading-spinner"></div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="nav-brand">
+                        <div class="brand-icon">🇰🇷</div>
+                        <span>Thông Tin Trường Hàn</span>
+                    </div>
+                    <p>Nền tảng thông tin trường đại học Hàn Quốc dành cho sinh viên Việt Nam.</p>
+                </div>
+                <div>
+                    <h4>Danh mục</h4>
+                    <ul>
+                        <li><a href="truong-hoc.html">Trường học</a></li>
+                        <li><a href="truong-hoc.html?filter=seoul">Trường tại Seoul</a></li>
+                        <li><a href="truong-hoc.html?filter=busan">Trường tại Busan</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Cẩm nang</h4>
+                    <ul>
+                        <li><a href="cam-nang-du-hoc.html#visa">Hướng dẫn Visa</a></li>
+                        <li><a href="cam-nang-du-hoc.html#hoc-bong">Học bổng</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Thông tin</h4>
+                    <ul>
+                        <li><a href="#">Giới thiệu</a></li>
+                        <li><a href="#">Liên hệ</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div>© 2026 ThongTinTruongHan.com - Dành cho du học sinh Việt Nam</div>
+                <div class="footer-social">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Review Form Modal -->
+    <div id="reviewForm" style="display:none; position:fixed; inset:0; background:rgba(0,0,0,0.5); z-index:2000; align-items:center; justify-content:center; backdrop-filter:blur(8px);" onclick="if(event.target===this)ReviewSystem.closeReviewForm()">
+        <div style="background:var(--bg-primary); border-radius:var(--radius-xl); padding:32px; max-width:500px; width:90%;">
+            <h3 style="margin-bottom:16px;">✍️ Viết đánh giá</h3>
+            <div style="margin-bottom:16px; text-align:center;">
+                <div id="starInput" style="display:flex; justify-content:center; gap:4px;"></div>
+            </div>
+            <input type="text" id="reviewerName" placeholder="Tên của bạn (để trống nếu ẩn danh)" style="width:100%; padding:10px 14px; border:2px solid var(--border); border-radius:var(--radius-md); font-family:inherit; margin-bottom:12px;">
+            <textarea id="reviewComment" placeholder="Chia sẻ trải nghiệm của bạn về trường này..." style="width:100%; min-height:100px; padding:12px; border:2px solid var(--border); border-radius:var(--radius-md); font-family:inherit; margin-bottom:16px;"></textarea>
+            <div style="display:flex; gap:8px; justify-content:flex-end;">
+                <button class="btn btn-secondary btn-sm" onclick="ReviewSystem.closeReviewForm()">Hủy</button>
+                <button class="btn btn-primary btn-sm" onclick="ReviewSystem.submitReview()">Gửi đánh giá</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/university-data.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/features.js"></script>
+</body>
+</html>
